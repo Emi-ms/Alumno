@@ -1,5 +1,8 @@
 package Alumno;
 
+import java.beans.PropertyChangeSupport;
+import java.beans.VetoableChangeSupport;
+
 /**
  * Alumno.java
  * Definición de la clase Alumno
@@ -41,5 +44,9 @@ public class Alumno {
      */
   private String nombre;
   private double nota = 0.0;
+    private final transient PropertyChangeSupport propertyChangeSupport = new java.beans.PropertyChangeSupport(this);
+    private final transient VetoableChangeSupport vetoableChangeSupport = new java.beans.VetoableChangeSupport(this);
+    public static final String PROP_NOMBRE = "nombre";
+    public static final String PROP_NOTA = "nota";
   
 }
