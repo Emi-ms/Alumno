@@ -8,7 +8,7 @@ public class Alumnos {
     
     // Define la estructura, un array de 5 alumnos
     // pero no crea los objetos
-    Alumno[] alum = new Alumno[5];
+    Alumno[] alumno = new Alumno[5];
     
 
     // Pide los datos de los alumnos /////////////////////////////////
@@ -17,7 +17,7 @@ public class Alumnos {
 /**
  * Llamamos al metodo para ingresar los datos de los alumnos
  */
-        ingresaAlumnos(alum, entrada);
+        ingresaAlumnos(alumno, entrada);
     
     // Muestra los datos de los alumnos /////////////////////////////////
     
@@ -25,7 +25,7 @@ public class Alumnos {
 /**
  * Mostramos los datos de los alumnos y la suma de todas las notas
  */
-    double  sumaNotasAlumnos = muestraDatos(alum);
+    double  sumaNotasAlumnos = muestraDatos(alumno);
     
     System.out.println("La media global de la clase es " + sumaNotasAlumnos / 5);
   }
