@@ -6,7 +6,7 @@ package Alumno;
  * @author Luis José Sánchez
  */
 
-public class Alumno {
+public class Alumnos {
 
     /**
      * @return devuelve el nombre de los alumnos

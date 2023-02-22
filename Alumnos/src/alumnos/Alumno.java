@@ -1,14 +1,22 @@
 package alumnos;
-import Alumno.Alumno;
+
+import Alumno.Alumnos;
 import java.util.Scanner;
 
-public class Alumnos {
+/**
+ *
+ * @author emiliano
+ */
+public class Alumno {
+
+    public Alumno() {
+    }
   public static void main(String[] args) {
     Scanner entrada = new Scanner(System.in);
     
     // Define la estructura, un array de 5 alumnos
     // pero no crea los objetos
-    Alumno[] alumno = new Alumno[5];
+    Alumnos[] alumno = new Alumnos[5];
     
 
     // Pide los datos de los alumnos /////////////////////////////////
@@ -34,7 +42,7 @@ public class Alumnos {
  * @param asigna los datos de cada alumno
  * @return muestra la informacion de cada alumno
  */
-    private static double muestraDatos(Alumno[] alum) {
+    private static double muestraDatos(Alumnos[] alum) {
         double  sumaDeMedias = 0;
         for(int i = 0; i < 5; i++) {
             System.out.println("Alumno " + i);
@@ -55,13 +63,13 @@ public class Alumnos {
  * @param entrada ingresa los datos de los alumnos
  * @throws NumberFormatException 
  */
-    private static void ingresaAlumnos(Alumno[] alum, Scanner entrada) throws NumberFormatException {
+    private static void ingresaAlumnos(Alumnos[] alum, Scanner entrada) throws NumberFormatException {
         String nombreIntroducido;
         double notaIntroducida;
         
         for(int i = 0; i < 5; i++) {
             
-            alum[i] = new Alumno();
+            alum[i] = new Alumnos();
             System.out.println("Alumno " + i);
             System.out.print("Nombre: ");
             nombreIntroducido = entrada.nextLine();
